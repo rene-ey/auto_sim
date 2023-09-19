@@ -1,0 +1,11 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="J1" type="static" programID="1" offset="0">
+        <phase duration="50" state="rrrGGGgrrrGGGrrrrrrrr" minDur="5" maxDur="60" />
+        <phase duration="3" state="rrryyyyrrryyyrrrrrrrr" />
+        <phase duration="50" state="GGgrrrrGGgrrrrrrrrrrr" minDur="5" maxDur="60" />
+        <phase duration="3" state="yyyrrrryyyrrrrrrrrrrr" />
+    </tlLogic>
+    <timedEvent type="SaveTLSStates" source="J1" dest="Outputs/tlsStates_v1.xml" />
+    <timedEvent type="SaveTLSSwitchTimes" source="J1" dest="Outputs/tlsSwtichTimes_v1.xml" />
+
+</additional>
